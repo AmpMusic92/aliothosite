@@ -1,0 +1,183 @@
+
+
+
+body{
+background-color:#f0f0f0
+}
+
+.title {
+    font-family:'Josefin Sans', sans-serif;
+    transition: 1.4s cubic-bezier(.05,.9,.32,.96);
+    font-size:70px;
+    position:relative;
+    text-align: center;
+
+
+
+}
+
+
+.menu_links{
+ display: grid;
+    grid-template-rows: auto ;
+    grid-gap: 20px;
+
+
+}
+
+
+.title h1{
+margin-bottom :auto;
+}
+
+
+.image_outer div{
+
+position: sticky;
+    top: 0;
+    /* right: 0; */
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 100px;
+    transition: 1.4s cubic-bezier(.05,.9,.32,.96);
+    text-orientation: mixed;
+    writing-mode: vertical-lr;
+
+}
+
+.image_outer div:hover
+{
+color: rgba(187, 26, 26);
+font-size:120px;
+
+
+}
+
+
+.lateral_right div
+{
+position: sticky;
+    top: 0;
+    /* right: 0; */
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 100px;
+    transition: 1.4s cubic-bezier(.05,.9,.32,.96);
+    text-orientation: mixed;
+    writing-mode: vertical-rl;
+    float:right;
+
+
+}
+
+.lateral_right div:hover
+{
+color: rgba(187, 26, 26);
+font-size:120px;
+
+
+}
+
+.list_menu{
+    font-family: 'Pontano Sans', sans-serif;
+    font-size: 50px;
+    transition: 1.4s cubic-bezier(.05,.9,.32,.96);
+    text-align: center;
+    color: black;
+    border: solid #000 2px;
+    margin: 6px;
+    align-self: center;
+    justify-self: center;
+    padding-left:300px;
+    padding-right:300px;
+
+}
+
+
+
+.list_menu:hover{
+color: rgba(255, 255, 255, 0.85);
+background-color: rgba(187, 26, 26);
+opacity: 1;
+
+}
+
+
+
+.main_menu{
+
+list-style-type: none;
+    padding: 0;
+    flex:inherit;
+
+}
+
+.list_menu a {
+text-decoration:none;
+color:black;
+
+
+}
+
+
+
+.list_menu a:hover {
+text-decoration:none;
+color:white;
+
+
+}
+
+.photos_menu{
+display: list-item;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    list-style-type: none;
+}
+
+
+img {
+  max-width:60%;
+
+
+}
+
+
+
+.image_outer {
+position:relative;
+
+}
+
+.image_outer img{
+ object-fit: cover;
+  height: -webkit-fill-available;
+
+}
+
+
+.lateral_left_menu_rotate{
+margin: auto;
+width:100%;
+text-align : center;
+
+
+}
+
+
+.homePage {
+    display: flex;
+
+}
+
+.namepage{
+
+ display: grid;
+    grid-template-rows: auto ;
+    grid-gap: 20px;
+
+}
+
+.column_list{
+display:flex;
+justify-content:center;
+}
