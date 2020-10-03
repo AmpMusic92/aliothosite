@@ -19,6 +19,7 @@ background-color:#f0f0f0
 
 @media (max-width: 640px) { .title
  {font-size:3rem;}
+
  }
 
 
@@ -59,6 +60,10 @@ font-size:120px;
 
 }
 
+@media (max-width: 640px){ .image_outer div
+ {font-size:5rem;}
+}
+
 
 .lateral_right div
 {
@@ -75,6 +80,9 @@ position: sticky;
 
 }
 
+@media (max-width: 640px){ .lateral_right div
+ {font-size:5rem;}
+}
 .lateral_right div:hover
 {
 color: rgba(187, 26, 26);
@@ -179,13 +187,41 @@ text-align : center;
 
 .namepage{
 
- display: grid;
-    grid-template-rows: auto ;
+ display: flex;
+    grid-template-column: auto ;
     grid-gap: 20px;
+    justify-content:space-between;
 
 }
 
 .column_list{
 display:flex;
 justify-content:center;
+}
+
+.lateral_upper_right_menu{
+display:flex;
+flex-direction:row;
+align-items:center;
+justify-content:space-evenly;
+flex-wrap: wrap;
+flex: 1 0 0;
+
+}
+
+.lateral_upper_right_menu a{
+font-family: 'Josefin Sans', sans-serif;
+    font-size: 50px;
+    transition: 1.4s cubic-bezier(.05,.9,.32,.96);
+    text-align : center;
+    flex-basis: 100px;
+    width: 40px;
+
+
+
+}
+
+.lateral_upper_left_menu {
+flex: 1 0 0;
+
 }
