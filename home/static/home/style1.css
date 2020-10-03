@@ -1,6 +1,10 @@
 
 
 
+html{
+font-size:100%;
+}
+
 body{
 background-color:#f0f0f0
 }
@@ -11,10 +15,13 @@ background-color:#f0f0f0
     font-size:70px;
     position:relative;
     text-align: center;
-
-
-
 }
+
+@media (max-width: 640px) { .title
+ {font-size:3rem;}
+ }
+
+
 
 
 .menu_links{
@@ -84,10 +91,7 @@ font-size:120px;
     color: black;
     border: solid #000 2px;
     margin: 6px;
-    align-self: center;
-    justify-self: center;
-    padding-left:300px;
-    padding-right:300px;
+    width: 70%;
 
 }
 
@@ -107,6 +111,10 @@ opacity: 1;
 list-style-type: none;
     padding: 0;
     flex:inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 }
 
