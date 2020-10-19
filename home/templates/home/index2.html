@@ -17,34 +17,18 @@
 
 <body >
 <div class="namepage">
-    <div class="lateral_upper_left_menu"></div>
+<div class="lateral_upper_left_menu"></div>
 
     <!--div class="title">
     <h1>
         {{title}}
     </h1>
-    </div-->
-    <div class="lateral_upper_right_menu">
-
-        <div class="lateral_right">
-
-               <div>about</div>
-        </div>
-
-        <div class ="image_outer">
-                <!img class="wave_image" src="{% static 'home/images/wave_lateral.png' %}">
-                    <a href="{% url 'releases:index'%}">
-                        releases
-                    </a>
-        </div>
     </div>
-
-
-
-
-
+<div class="lateral_upper_right_menu">
 
 </div>
+
+</div-->
 
 
 
@@ -52,20 +36,7 @@
         {% if menuFields %}
 
             <ul class="main_menu" >
-                     <div class="main_box_image_container" style="background-image: url({% static 'home/images/fotobew.jpg' %}); backgroud-repeat=no-repeat;
-                     background-size : cover; background-position: 50% 50%; height:500px;  width:auto; flex-grow: 2;" >
-
-                         <div class="title">
-                            <h1>
-                                {{title}}
-                            </h1>
-                         </div>
-
-
-                </div>
-
-
-            <div class="list_menu_elements" style="text-align: -moz-center;flex-grow: 1;">
+                <div>
                 {% for field in menuFields %}
 
                         <li class="list_menu" >
@@ -73,7 +44,7 @@
 
                     {% endfor %}
 
-            </div>
+                </div>
             </ul>
 
         {% else %}
@@ -82,10 +53,10 @@
 
 
 
-    <!--div class="homePage">
+    <div class="homePage">
 
 
-            <!--div class ="image_outer">
+            <div class ="image_outer">
             <!img class="wave_image" src="{% static 'home/images/wave_lateral.png' %}">
                 <a href="{% url 'releases:index'%}">
                     releases
@@ -108,7 +79,7 @@
        <div>about</div>
     </div>
 
-</div-->
+</div>
 
 </body>
 </html>
