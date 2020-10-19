@@ -26,12 +26,12 @@
     </div-->
     <div class="lateral_upper_right_menu">
 
-        <div class="lateral_right">
+        <div class="lateral_right" style="order:2;">
 
                <div>about</div>
         </div>
 
-        <div class ="image_outer">
+        <div class ="image_outer" style="order:1;">
                 <!img class="wave_image" src="{% static 'home/images/wave_lateral.png' %}">
                     <a href="{% url 'releases:index'%}">
                         releases
@@ -82,7 +82,26 @@
 
 
 
-    <!--div class="homePage">
+    <section class="latest_section">
+        <h1 style="font-family: 'Josefin Sans', sans-serif;font-size: 60px;transition: 1.4s cubic-bezier(.05,.9,.32,.96);">Latest</h1>
+
+        {% with imageLink=imageLink%}
+
+        <div class="last_release_container" style="display:flex;">
+                <img class="image_latest"  src={%static imageLink%} style="max-width:500px;max-height:10000px;">
+
+        {%endwith%}
+                    </img>
+
+                <div class="last_release_text" style="font-family: 'Josefin Sans', sans-serif;font-size: 30px;transition: 1.4s cubic-bezier(.05,.9,.32,.96);text-align: inherit;margin-left: 100px;">
+                    {{releaseText}}
+                </div>
+        </div>
+
+
+
+
+        </section>
 
 
             <!--div class ="image_outer">
