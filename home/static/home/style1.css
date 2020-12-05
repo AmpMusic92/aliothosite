@@ -141,16 +141,6 @@ background-image: url( "{% static 'images/fotobew.JPG' %}");
 
 
 
-
-.list_menu a {
-text-decoration:none;
-color:black;
-
-
-}
-
-
-
 .list_menu a:hover {
 text-decoration:none;
 color:white;
@@ -203,12 +193,18 @@ text-align : center;
 
 }
 
+@media (max-width: 640px){ .last_release_text
+ {font-size:5rem;}
+}
+
+
+
 .namepage{
 
  display: flex;
     grid-template-column: auto ;
     grid-gap: 20px;
-    justify-content:space-between;
+    justify-content:space-around;
 
 }
 
