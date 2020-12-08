@@ -5,7 +5,7 @@ html{
 font-size:100%;
 }
 .list_header{
-margin:20px;
+margin:15px;
 font-family: 'Josefin Sans';
 font-size: 60px;
 transition: 1.4s cubic-bezier(.05,.9,.32,.96);
