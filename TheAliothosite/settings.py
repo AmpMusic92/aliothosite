@@ -27,7 +27,7 @@ with open(os.path.join(BASE_DIR,'secretkey.txt')) as f:
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1','localhost','aliothomusic.com','www.aliothomusic.com']
+ALLOWED_HOSTS = ['127.0.0.1','localhost','aliothomusic.com','www.aliothomusic.com','aliothosite.herokuapp.com']
 
 
 # Application definition
