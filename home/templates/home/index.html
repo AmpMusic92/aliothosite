@@ -30,7 +30,7 @@
 
                {% for field in menuFields %}
 
-                        <li class="list_header" style="margin:20px;font-family: 'Josefin Sans', sans-serif;font-size: 60px;transition: 1.4s cubic-bezier(.05,.9,.32,.96);list-style-type:none" >
+                        <li class="list_header"  >
                             <a style="text-decoration:none; color:black;" href={{field.getRelatedLinkText}} >{{field.menuField}}</a></li>
 
                     {% endfor %}
@@ -44,7 +44,7 @@
         {% if menuFields %}
 
             <ul class="main_menu" >
-                     <div class="main_box_image_container" style="background-image: url({% static 'home/images/fotobew.jpg' %}); backgroud-repeat=no-repeat;
+                     <div class="main_box_image_container" style="background-image: url({% static 'home/images/fotobew1.jpg' %}); backgroud-repeat=no-repeat;
                      background-size : cover; background-position: 50% 50%; height:500px;  width:auto; flex-grow: 2;" >
 
                          <div class="title">
@@ -69,16 +69,19 @@
     <section class="latest_section">
         <h1 style="font-family: 'Josefin Sans', sans-serif;font-size: 60px;transition: 1.4s cubic-bezier(.05,.9,.32,.96);">Latest</h1>
 
-        {% with imageLink=imageLink%}
+        {% with imageLink=imageLink link=link%}
+
 
         <div class="last_release_container" style="display:flex; flex-direction:row; flex-wrap:wrap; justify-content:space-evenly; align-items: center; ">
-                <img class="image_latest"  src={%static imageLink%} style="max-width:500px;max-height:10000px;">
+                <a href={{link}}>
+                <img class="image_latest"  src={%static imageLink%}   >
+                </a>
 
         {%endwith%}
                     </img>
 
 
-            <div class="last_release_text" style="font-family: 'Josefin Sans', sans-serif;font-size: 30px;transition: 1.4s cubic-bezier(.05,.9,.32,.96);text-align: inherit;/*! width:500px; */flex-basis: 5000px;/*! flex-shrink: 2; */max-width: 750px;flex-grow: 1;flex-shrink: 1;/*! padding-left: 100px; */background-color: #6024e7;text-align: right;/*! padding-left: 300px; */">
+            <div class="last_release_text" style="display:center;font-family: 'Josefin Sans', sans-serif;font-size: 20px;transition: 1.4s cubic-bezier(.05,.9,.32,.96);text-align: center;/*! width:500px; */flex-basis: 5000px;/*! flex-shrink: 2; */max-width: 750px;flex-grow: 1;flex-shrink: 1;/*! padding-left: 100px; text-align: right;/*! padding-left: 300px; */">
 
 
                     {{releaseText}}

@@ -4,10 +4,30 @@
 html{
 font-size:100%;
 }
+.list_header{
+margin:20px;
+font-family: 'Josefin Sans';
+font-size: 60px;
+transition: 1.4s cubic-bezier(.05,.9,.32,.96);
+list-style-type:none
+
+}
+
+@media (max-width: 640px) { .list_header
+ {font-size:3rem;}
+
+ }
 
 body{
 background-color:#f0f0f0
 }
+
+
+
+
+
+
+
 
 .title {
     font-family:'Josefin Sans', sans-serif;
@@ -239,3 +259,12 @@ font-family: 'Josefin Sans', sans-serif;
 flex: 1 0 0;
 
 }
+
+.image_latest{
+max-width:500px;max-height:10000px;margin:34px;
+}
+
+@media (max-width: 640px) { .image_latest
+ {max-width:400px;}
+
+ }

@@ -10,8 +10,10 @@ from django.shortcuts import redirect
 def index(request):
     menuFields = MenuField.objects.all()
     title = Title.objects.all()[0]
-    releaseText = Release.objects.all().order_by('-releaseDate')[0].releaseDesc
-    releaseArtwork = Release.objects.all().order_by( '-releaseDate' )[0].imageLink
+    lastRelease = Release.objects.all().order_by('-releaseDate')[0]
+    releaseText = lastRelease.releaseDesc
+    releaseArtwork = lastRelease.imageLink
+    link = lastRelease.releaseLink
 
     template = loader.get_template( 'home/index.html' )
     context = {
@@ -19,7 +21,8 @@ def index(request):
         'menuFields': menuFields,
         'title': title,
         'releaseText':releaseText,
-        'imageLink':releaseArtwork
+        'imageLink':releaseArtwork,
+        'link':link
 
     }
     return HttpResponse( template.render( context, request ) )
