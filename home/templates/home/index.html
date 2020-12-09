@@ -72,22 +72,22 @@
         {% with imageLink=imageLink link=link%}
 
 
-        <div class="last_release_container" style="display:flex; flex-direction:row; flex-wrap:wrap; justify-content:space-evenly; align-items: center; ">
+        <div class="last_release_container" style="display:flex; flex-direction:row; flex-wrap:wrap; justify-content:space-evenly; align-items: center;transition: 1.4s cubic-bezier(.05,.9,.32,.96); ">
                 <a href={{link}}>
-                <img class="image_latest"  src={%static imageLink%}   >
+                <img class="image_latest"  src={%static imageLink%} style="transition: 1.4s cubic-bezier(.05,.9,.32,.96);"  >
                 </a>
 
         {%endwith%}
                     </img>
 
 
-            <div class="last_release_text" style="display:center;font-family: 'Josefin Sans', sans-serif;font-size: 20px;transition: 1.4s cubic-bezier(.05,.9,.32,.96);text-align: center;/*! width:500px; */flex-basis: 5000px;/*! flex-shrink: 2; */max-width: 750px;flex-grow: 1;flex-shrink: 1;/*! padding-left: 100px; text-align: right;/*! padding-left: 300px; */">
+            <h1 class="last_release_text" style="display:center;font-family: 'Josefin Sans', sans-serif;font-size: 30px;transition: 1.4s cubic-bezier(.05,.9,.32,.96);text-align: center;/*! width:500px; */flex-basis: 5000px;/*! flex-shrink: 2; */max-width: 750px;flex-grow: 1;flex-shrink: 1;/*! padding-left: 100px; text-align: right;/*! padding-left: 300px; */">
 
 
                     {{releaseText}}
 
 
-                </div>
+                </h1>
 
         </div>
 <!--iframe src="https://open.spotify.com/embed/track/0kJmPBowuJatdhGIqjMieI" width="300" height="200" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe-->
