@@ -15,9 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include , path
+from home import views
+
+# here i should include all urls mapping of all apps needed. The aim is to not import views here
 
 urlpatterns = [
 
-    path('',include('home.urls')),
+    path('', include('home.urls'), name='index'),
     path('admin/', admin.site.urls),
+    #path('/redirect', views.redirect, name='redirect')
 ]

@@ -28,8 +28,7 @@ def index(request):
     return HttpResponse( template.render( context, request ) )
 
 def redirect(request):
-    response = redirect("http://www.google.com")
-    return response
+    return HttpResponse('GOOGLE')
 
 
 
